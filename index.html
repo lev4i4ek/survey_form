@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+    <main>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <div id="formbox">
+        <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label><br class="inputbrake">
+            <input name="name" type="text" placeholder="Enter your name" class="input">
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label><br class="inputbrake">
+            <input name="email" type="email" placeholder="Enter your Email" class="input" required>
+        </div>
+        <div class="form-group">
+            <label id="age-label" for="age">Age<span>(optional)</span></label><br class="inputbrake">
+            <input name="age" type="number" placeholder="Age" min="10" max="100" class="input">
+        </div>
+        <div class="form-group">    
+            <p>Which option best describes your current role</p>
+            <select name="role" class="dropdown">
+                <options disabled selected value>Select Current Role</options>
+                <option value="Student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="dontsay">Prefer Not To Say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <input type="radio" id="definitely" name="check" class="radio">
+            <label for definitely>Definitely</label>
+            <br>
+            <input type="radio" id="maybe" name="check" class="radio">
+            <label for definitely>Maybe</label>
+            <br>
+            <input type="radio" id="not-sure" name="check" class="radio">
+            <label for definitely>Not sure</label>
+        </div>
+        <div class="form-group">
+            <p>What is your favorite feature of freeCodeCamp?</p>
+            <select name="favfeature" class="dropdown">
+                <option>Challenges</option>
+                <option>Projects</option>
+                <option>Community</option>
+                <option>Open Source</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+            <label><input type="checkbox" id="FE" value="checked" class="option">Front-end Projects</label><br>
+            <label><input type="checkbox" id="BE" value="checked" class="option">Back-end Projects</label><br>
+            <label><input type="checkbox" id="DV" value="checked" class="option">Data Visualization</label><br>
+            <label><input type="checkbox" id="CH" value="checked" class="option">Challenges</label><br>
+            <label><input type="checkbox" id="OSC" value="checked" class="option">Open Source Community</label><br>
+            <label><input type="checkbox" id="GHR" value="checked" class="option">Gitter help rooms</label><br>
+            <label><input type="checkbox" id="VID" value="checked" class="option">Videos</label><br>
+            <label><input type="checkbox" id="CM" value="checked" class="option">City Meetups</label><br>
+            <label><input type="checkbox" id="wiki" value="checked" class="option">Wiki</label><br>
+            <label><input type="checkbox" id="forum" value="checked" class="option">Forum</label><br>
+            <label><input type="checkbox" id="addcourses" value="checked" class="option">Additional Courses</label><br>
+        </div>
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea placeholder="Enter your comment here..." ></textarea>
+            <br>
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </div>
+        </form>
+    </div>
+    </main>
+    </body>
+</html>
